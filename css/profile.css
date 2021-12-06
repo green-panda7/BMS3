@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --oxford_blue: #031D44;
+    --indigo_dye: #04395E;
+    --polished_pine: #70A288;
+    --burlywood: #DAB785;
+    --copper_crayola: #D5896F;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--copper_crayola);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+
+/* headings */
+
+.headings {
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    background: var(--oxford_blue);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brgy_name {
+    position: absolute;
+    color: var(--white);
+    border-left: 20px solid var(--oxford_blue);
+    top: 10px;
+    text-align: start;
+}
+
+.user {
+    position: relative;
+    top: 10px;
+    left: calc(100% - 70px);
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* navigation */
+
+.navigation {
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+    background: var(--oxford_blue);
+    border-left: 15px solid var(--oxford_blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation dl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation dl dt {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+/* dashboard navigation */
+
+.navigation dl dt:nth-child(3) {
+    background: var(--copper_crayola);
+}
+
+.navigation dl dt:nth-child(3) a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--oxford_blue);
+}
+
+.navigation dl dt:nth-child(1) {
+    margin-bottom: 100px;
+    pointer-events: none;
+}
+
+.navigation dl dt:nth-child(7) {
+    margin-top: 75px;
+    pointer-events: none;
+    color: var(--white);
+}
+
+.navigation dl dt .logo {
+    position: relative;
+    display: block;
+    top: 10px;
+    min-width: 250px;
+    height: 50px;
+    Line-height: 50px;
+    text-align: center;
+}
+
+.navigation dl dt a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation dl dt a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    Line-height: 80px;
+    text-align: center;
+}
+
+.navigation dl dt a .icon ion-icon {
+    font-size: 1.75em;
+}
+
+.navigation dl dt a .title_nav {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    Line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+/* contact us*/
+
+.contact_us ul {
+    position: absolute;
+    top: 550px;
+    left: 30px;
+    width: 100%;
+}
+
+.contact_us ul li {
+    position: relative;
+    width: 200%;
+    list-style: none;
+}
+
+.contact_us ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contact_us ul li a .icon {
+    position: relative;
+    top: 3px;
+    display: block;
+    min-width: 30px;
+    height: 25px;
+    Line-height: 25px;
+    text-align: center;
+}
+
+.contact_us ul li a .icon ion-icon {
+    font-size: 1.2em;
+}
+
+.contact_us ul li a .title_contact {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 25px;
+    Line-height: 25px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navigation dl dt .icon_contact ion-icon {
+    font-size: 1.5em;
+}
+
+.navigation dl dt .title_contact {
+    position: relative;
+    display: block;
+    top: -30px;
+    padding: 0 25px;
+    height: 40px;
+    Line-height: 25px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+/* nav curve right */
+
+.navigation dl dt:nth-child(3) a::before,
+.navigation dl dt:nth-child(3) a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--copper_crayola);
+    pointer-events: none;
+}
+
+.navigation dl dt:nth-child(3) a::after,
+.navigation dl dt:nth-child(3) a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--copper_crayola);
+    pointer-events: none;
+}
+
+
+/* main */
+
+.main {
+    position: relative;
+    width: calc(100% - 350px);
+    left: 350px;
+    transition: 0.5s;
+}
+
+
+/* Profile */
+
+.profile {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.profile .profileItems {
+    position: relative;
+    background: var(--burlywood);
+    padding: 50px;
+    height: 140%;
+    left: 105%;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.profile .profileItems:nth-child(1) {
+    position: relative;
+    left: 0px;
+    height: 250%;
+    background: var(--burlywood);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.profile img {
+    position: relative;
+    top: 10px;
+    left: calc(100% - 300px);
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.profile a {
+    color: var(--indigo_dye);
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.profile .profileItems:hover {
+    background: var(--indigo_dye);
+}
+
+.profile .profileItems:hover a {
+    color: var(--burlywood);
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --oxford_blue: #031D44;
+    --indigo_dye: #04395E;
+    --polished_pine: #70A288;
+    --burlywood: #DAB785;
+    --copper_crayola: #D5896F;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--burlywood);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+
+/* headings */
+
+.headings {
+    position: relative;
+    display: flex;
+    width: 100%;
+    color: var(--oxford_blue);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+.brgy_name {
+    position: relative;
+    align-items: center;
+}
+
+.user {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+
+/* navigation */
+
+.navigation ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    left: 15px;
+    padding: 5px;
+}
+
+.navigation ul li a {
+    display: flex;
+    text-decoration: none;
+    color: var(--indigo_dye);
+}
+
+.navigation ul li a .title_nav {
+    display: flex;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navigation ul li a:hover {
+    color: var(--oxford_blue);
+    text-decoration: underline 5px var(--copper_crayola);
+}
+
+
+/* items */
